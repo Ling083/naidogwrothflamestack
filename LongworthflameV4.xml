@@ -1,0 +1,490 @@
+<?xml version="1.0"?>
+<TriggernometryExport Version="1">
+  <ExportedFolder Id="9499dc4c-4f33-4a93-9c46-0c0a4cac2193" Name="EntanglingFlameAM v1.02 (modified by LongPP v4) " Enabled="true">
+    <Folders>
+      <Folder Id="1a3ccbef-f6a6-499d-856a-1f0f657cf4b6" Name="Added by LongPP" Enabled="true">
+        <Folders />
+        <Triggers>
+          <Trigger Enabled="true" Name="$Readthis" Id="be4dd84f-4405-40eb-b8d5-91545b088970" RegularExpression="">
+            <Actions>
+              <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="Original: inside Getplayer, 5th action, which has a condition of ${lvar:DebuffList.size} = 6." TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" OBSEndPoint="" UseTTSTextExpression="which is pointed to trigger MarkBind1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="3" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Placeholder">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="4" OBSEndPoint="" UseTTSTextExpression="Changed: it points to Sorting mechanism first, which will then point to MarkBind1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="5" OBSEndPoint="" UseTTSTextExpression="Result: u have desired tank/DPS to pass the Mortal vow in the middle" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="6" OBSEndPoint="" UseTTSTextExpression="where we decided, Bind = closer to Hrae,Ignore closer to center" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Sequential="True" Name="jobs priority (drag the setting here)" Id="16d60e04-81f3-451f-93c5-6b4702966ad5" RegularExpression="">
+            <Actions>
+              <Action OrderNumber="1" ListVariableName="LongJobPriority" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" OBSEndPoint="" UseTTSTextExpression="Bind Priority" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" Enabled="False" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="3" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="SCH" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="4" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="WHM" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="5" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="SGE" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="6" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="AST" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="7" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="MCH" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="8" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="BRD" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="9" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="DNC" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="10" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="BLM" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="11" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="RDM" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="12" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="SMN" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="13" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="RPR" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="14" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="DRG" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="15" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="MNK" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="16" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="SAM" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="17" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="NIN" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="18" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="PLD" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="19" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="WAR" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="20" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="GBN" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="21" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="DRK" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="22" OBSEndPoint="" UseTTSTextExpression="Ignore Priority" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" Enabled="False" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:LongJobPriority.size}" ExpressionTypeL="Numeric" ExpressionR="19" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
+              <ConditionSingle Enabled="true" ExpressionL="${elvar:LongJobPriority}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+            </Condition>
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Sequential="True" Name="sorting" Id="8877715f-2786-4ee2-8177-6ba6098385b7" RegularExpression="">
+            <Actions>
+              <Action OrderNumber="1" ListVariableOp="Set" ListVariableName="StackBuffSort" ListVariableExpression="${lvar:StackBuff[1]}" ListVariableIndex="2" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${lvar:LongJobPriority.indexof(${_ffxivparty[${lvar:StackBuff[1]}].job})}" ExpressionTypeL="Numeric" ExpressionR="${lvar:LongJobPriority.indexof(${_ffxivparty[${lvar:StackBuff[2]}].job})}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="2" ListVariableOp="Set" ListVariableName="StackBuffSort" ListVariableExpression="${lvar:StackBuff[2]}" ListVariableIndex="1" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${lvar:LongJobPriority.indexof(${_ffxivparty[${lvar:StackBuff[1]}].job})}" ExpressionTypeL="Numeric" ExpressionR="${lvar:LongJobPriority.indexof(${_ffxivparty[${lvar:StackBuff[2]}].job})}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="3" ListVariableOp="Copy" ListVariableName="StackBuffSort" ListVariableTarget="StackBuff" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="false" ExpressionL="${lvar:LongJobPriority.indexof(${_ffxivparty[${lvar:StackBuff[1]}].job})}" ExpressionTypeL="Numeric" ExpressionR="${lvar:LongJobPriority.indexof(${_ffxivparty[${lvar:StackBuff[2]}].job})}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  <ConditionSingle Enabled="true" ExpressionL="${lvar:StackBuffSort[2]}" ExpressionTypeL="Numeric" ExpressionR="${lvar:StackBuff[1]}" ExpressionTypeR="Numeric" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${lvar:StackBuffSort[1]}" ExpressionTypeL="Numeric" ExpressionR="${lvar:StackBuff[2]}" ExpressionTypeR="Numeric" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${lvar:StackBuff[2]}" ExpressionTypeL="String" ExpressionR="${var:MortalVowCurrent}" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="4" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" Enabled="False" ActionType="Placeholder">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="5" ListVariableOp="Set" ListVariableName="NoDebuffSort" ListVariableExpression="${lvar:NoDebuff[1]}" ListVariableIndex="2" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${lvar:LongJobPriority.indexof(${_ffxivparty[${lvar:NoDebuff[1]}].job})}" ExpressionTypeL="Numeric" ExpressionR="${lvar:LongJobPriority.indexof(${_ffxivparty[${lvar:NoDebuff[2]}].job})}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="6" ListVariableOp="Set" ListVariableName="NoDebuffSort" ListVariableExpression="${lvar:NoDebuff[2]}" ListVariableIndex="1" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${lvar:LongJobPriority.indexof(${_ffxivparty[${lvar:NoDebuff[1]}].job})}" ExpressionTypeL="Numeric" ExpressionR="${lvar:LongJobPriority.indexof(${_ffxivparty[${lvar:NoDebuff[2]}].job})}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="7" ListVariableOp="Copy" ListVariableName="NoDebuffSort" ListVariableTarget="NoDebuff" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="false" ExpressionL="${lvar:LongJobPriority.indexof(${_ffxivparty[${lvar:NoDebuff[1]}].job})}" ExpressionTypeL="Numeric" ExpressionR="${lvar:LongJobPriority.indexof(${_ffxivparty[${lvar:NoDebuff[2]}].job})}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  <ConditionSingle Enabled="true" ExpressionL="${lvar:NoDebuffSort[1]}" ExpressionTypeL="Numeric" ExpressionR="${lvar:NoDebuff[2]}" ExpressionTypeR="Numeric" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${lvar:NoDebuffSort[2]}" ExpressionTypeL="Numeric" ExpressionR="${lvar:NoDebuff[1]}" ExpressionTypeR="Numeric" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${lvar:NoDebuff[2]}" ExpressionTypeL="String" ExpressionR="${var:MortalVowCurrent}" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="8" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" Enabled="False" ActionType="Placeholder">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="9" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="dc22db5a-597e-4056-b677-1ee39a798d68" TriggerForce="regexp" ActionType="Trigger">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="mortal vow" Id="b5a22c94-726a-4a82-bfcc-f8accccbfb74" RegularExpression="(?&lt;timestamp&gt;^.{14}) (?:ActionEffect|AOEActionEffect) (?&lt;type&gt;(?:15|16)):[^:]*:Nidhogg:6D31:[^:]:(?&lt;target&gt;[^:]*):">
+            <Actions>
+              <Action OrderNumber="1" OBSEndPoint="" VariableOp="SetString" VariableName="MortalVowCurrent" VariableExpression="${target}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+        </Triggers>
+      </Folder>
+    </Folders>
+    <Triggers>
+      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="GetPlayer (modified)" Id="ee25cfcb-f0b7-4d7b-aa17-23a8eff811bf" RegularExpression="^26\|[^|]*\|AC(?&lt;id&gt;[67])\|[^|]*\|[^|]*\|[^|]*\|\|[^|]*\|(?&lt;name&gt;[^|]*)" MutexToCapture="Entagle">
+        <Actions>
+          <Action OrderNumber="-1" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="16d60e04-81f3-451f-93c5-6b4702966ad5" TriggerForce="regexp" ActionType="Trigger">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="0" ListVariableOp="Push" ListVariableName="DebuffList" ListVariableExpression="${name}" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="2" ListVariableOp="Push" ListVariableName="StackBuff" ListVariableExpression="${name}" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable" Asynchronous="False">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${id}" ExpressionTypeL="Numeric" ExpressionR="7" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="3" LoopDelayExpression="1" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Loop" Asynchronous="False">
+            <LoopCondition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:NoDebuff.size}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+              <ConditionSingle Enabled="true" ExpressionL="${var:FlameCounter}" ExpressionTypeL="Numeric" ExpressionR="8" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+            </LoopCondition>
+            <LoopActions>
+              <Action OrderNumber="1" OBSEndPoint="" VariableOp="SetNumeric" VariableName="FlameCounter" VariableExpression="${var:FlameCounter}+1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" Asynchronous="False">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" ListVariableOp="Push" ListVariableName="NoDebuff" ListVariableExpression="${lvar:TelestoPartyMembers[${var:FlameCounter}]}" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable" Asynchronous="False">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${lvar:DebuffList.indexof(${lvar:TelestoPartyMembers[${var:FlameCounter}]})}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </Condition>
+              </Action>
+            </LoopActions>
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:DebuffList.size}" ExpressionTypeL="Numeric" ExpressionR="6" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="5" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8877715f-2786-4ee2-8177-6ba6098385b7" TriggerForce="regexp" ActionType="Trigger" Asynchronous="False">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:DebuffList.size}" ExpressionTypeL="Numeric" ExpressionR="6" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="6" LogMessageText="Stack 1: ${lvar:StackBuff[1]}" LogLevel="Info" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="LogMessage">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="7" LogMessageText="Stack 2: ${lvar:StackBuff[2]}" LogLevel="Info" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="LogMessage">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="8" LogMessageText="No Debuff 1: ${lvar:NoDebuff[1]}" LogLevel="Info" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="LogMessage">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="9" LogMessageText="No Debuff 2: ${lvar:NoDebuff[2]}" LogLevel="Info" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="LogMessage">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+        <Conditions />
+      </Trigger>
+      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="MarkBind1" Id="dc22db5a-597e-4056-b677-1ee39a798d68" RegularExpression="">
+        <Actions>
+          <Action OrderNumber="1" JsonEndpointExpression="http://localhost:51323/" JsonPayloadExpression="{&quot;version&quot;: 1, &quot;id&quot;: 1, &quot;type&quot;: &quot;Bundle&quot;, &quot;payload&quot;: [&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk bind &lt;1&gt;&quot;}}&#xD;&#xA;]}" KeypressType="WindowMessage" KeyPressExpression="{F1}" KeyPressCode="112" KeyPressWindow="FINAL FANTASY XIV" VariableOp="SetString" VariableName="${var:Marker1}" VariableExpression="$(playerName)" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False" Description="Mark Player 1" DescriptionOverride="True">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:StackBuff[1]}" ExpressionTypeL="String" ExpressionR="${lvar:TelestoPartyMembers[1]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="2" JsonEndpointExpression="http://localhost:51323/" JsonPayloadExpression="{&quot;version&quot;: 1, &quot;id&quot;: 1, &quot;type&quot;: &quot;Bundle&quot;, &quot;payload&quot;: [&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk bind &lt;2&gt;&quot;}}&#xD;&#xA;]}" KeypressType="WindowMessage" KeyPressExpression="{F1}" KeyPressCode="112" KeyPressWindow="FINAL FANTASY XIV" VariableOp="SetString" VariableName="${var:Marker1}" VariableExpression="$(playerName)" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False" Description="Mark Player 2" DescriptionOverride="True">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:StackBuff[1]}" ExpressionTypeL="String" ExpressionR="${lvar:TelestoPartyMembers[2]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="3" JsonEndpointExpression="http://localhost:51323/" JsonPayloadExpression="{&quot;version&quot;: 1, &quot;id&quot;: 1, &quot;type&quot;: &quot;Bundle&quot;, &quot;payload&quot;: [&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk bind &lt;3&gt;&quot;}}&#xD;&#xA;]}" KeypressType="WindowMessage" KeyPressExpression="{F1}" KeyPressCode="112" KeyPressWindow="FINAL FANTASY XIV" VariableOp="SetString" VariableName="${var:Marker1}" VariableExpression="$(playerName)" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False" Description="Mark Player 3" DescriptionOverride="True">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:StackBuff[1]}" ExpressionTypeL="String" ExpressionR="${lvar:TelestoPartyMembers[3]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="4" JsonEndpointExpression="http://localhost:51323/" JsonPayloadExpression="{&quot;version&quot;: 1, &quot;id&quot;: 1, &quot;type&quot;: &quot;Bundle&quot;, &quot;payload&quot;: [&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk bind &lt;4&gt;&quot;}}&#xD;&#xA;]}" KeypressType="WindowMessage" KeyPressExpression="{F1}" KeyPressCode="112" KeyPressWindow="FINAL FANTASY XIV" VariableOp="SetString" VariableName="${var:Marker1}" VariableExpression="$(playerName)" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False" Description="Mark Player 4" DescriptionOverride="True">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:StackBuff[1]}" ExpressionTypeL="String" ExpressionR="${lvar:TelestoPartyMembers[4]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="5" JsonEndpointExpression="http://localhost:51323/" JsonPayloadExpression="{&quot;version&quot;: 1, &quot;id&quot;: 1, &quot;type&quot;: &quot;Bundle&quot;, &quot;payload&quot;: [&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk bind &lt;5&gt;&quot;}}&#xD;&#xA;]}" KeypressType="WindowMessage" KeyPressExpression="{F1}" KeyPressCode="112" KeyPressWindow="FINAL FANTASY XIV" VariableOp="SetString" VariableName="${var:Marker1}" VariableExpression="$(playerName)" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False" Description="Mark Player 5" DescriptionOverride="True">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:StackBuff[1]}" ExpressionTypeL="String" ExpressionR="${lvar:TelestoPartyMembers[5]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="6" JsonEndpointExpression="http://localhost:51323/" JsonPayloadExpression="{&quot;version&quot;: 1, &quot;id&quot;: 1, &quot;type&quot;: &quot;Bundle&quot;, &quot;payload&quot;: [&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk bind &lt;6&gt;&quot;}}&#xD;&#xA;]}" KeypressType="WindowMessage" KeyPressExpression="{F1}" KeyPressCode="112" KeyPressWindow="FINAL FANTASY XIV" VariableOp="SetString" VariableName="${var:Marker1}" VariableExpression="$(playerName)" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False" Description="Mark Player 6" DescriptionOverride="True">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:StackBuff[1]}" ExpressionTypeL="String" ExpressionR="${lvar:TelestoPartyMembers[6]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="7" JsonEndpointExpression="http://localhost:51323/" JsonPayloadExpression="{&quot;version&quot;: 1, &quot;id&quot;: 1, &quot;type&quot;: &quot;Bundle&quot;, &quot;payload&quot;: [&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk bind &lt;7&gt;&quot;}}&#xD;&#xA;]}" KeypressType="WindowMessage" KeyPressExpression="{F1}" KeyPressCode="112" KeyPressWindow="FINAL FANTASY XIV" VariableOp="SetString" VariableName="${var:Marker1}" VariableExpression="$(playerName)" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False" Description="Mark Player 7" DescriptionOverride="True">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:StackBuff[1]}" ExpressionTypeL="String" ExpressionR="${lvar:TelestoPartyMembers[7]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="8" JsonEndpointExpression="http://localhost:51323/" JsonPayloadExpression="{&quot;version&quot;: 1, &quot;id&quot;: 1, &quot;type&quot;: &quot;Bundle&quot;, &quot;payload&quot;: [&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk bind &lt;8&gt;&quot;}}&#xD;&#xA;]}" KeypressType="WindowMessage" KeyPressExpression="{F1}" KeyPressCode="112" KeyPressWindow="FINAL FANTASY XIV" VariableOp="SetString" VariableName="${var:Marker1}" VariableExpression="$(playerName)" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False" Description="Mark Player 8" DescriptionOverride="True">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:StackBuff[1]}" ExpressionTypeL="String" ExpressionR="${lvar:TelestoPartyMembers[8]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="9" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="89e91437-1af4-4664-8401-e468b74f3352" TriggerForce="regexp" ActionType="Trigger" ExecutionDelayExpression="300" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+        <Conditions />
+      </Trigger>
+      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="MarkBind2" Id="89e91437-1af4-4664-8401-e468b74f3352" RegularExpression="">
+        <Actions>
+          <Action OrderNumber="1" JsonEndpointExpression="http://localhost:51323/" JsonPayloadExpression="{&quot;version&quot;: 1, &quot;id&quot;: 1, &quot;type&quot;: &quot;Bundle&quot;, &quot;payload&quot;: [&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk bind &lt;1&gt;&quot;}}&#xD;&#xA;]}" KeypressType="WindowMessage" KeyPressExpression="{F1}" KeyPressCode="112" KeyPressWindow="FINAL FANTASY XIV" VariableOp="SetString" VariableName="${var:Marker1}" VariableExpression="$(playerName)" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False" Description="Mark Player 1" DescriptionOverride="True">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:NoDebuff[1]}" ExpressionTypeL="String" ExpressionR="${lvar:TelestoPartyMembers[1]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="2" JsonEndpointExpression="http://localhost:51323/" JsonPayloadExpression="{&quot;version&quot;: 1, &quot;id&quot;: 1, &quot;type&quot;: &quot;Bundle&quot;, &quot;payload&quot;: [&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk bind &lt;2&gt;&quot;}}&#xD;&#xA;]}" KeypressType="WindowMessage" KeyPressExpression="{F1}" KeyPressCode="112" KeyPressWindow="FINAL FANTASY XIV" VariableOp="SetString" VariableName="${var:Marker1}" VariableExpression="$(playerName)" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False" Description="Mark Player 2" DescriptionOverride="True">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:NoDebuff[1]}" ExpressionTypeL="String" ExpressionR="${lvar:TelestoPartyMembers[2]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="3" JsonEndpointExpression="http://localhost:51323/" JsonPayloadExpression="{&quot;version&quot;: 1, &quot;id&quot;: 1, &quot;type&quot;: &quot;Bundle&quot;, &quot;payload&quot;: [&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk bind &lt;3&gt;&quot;}}&#xD;&#xA;]}" KeypressType="WindowMessage" KeyPressExpression="{F1}" KeyPressCode="112" KeyPressWindow="FINAL FANTASY XIV" VariableOp="SetString" VariableName="${var:Marker1}" VariableExpression="$(playerName)" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False" Description="Mark Player 3" DescriptionOverride="True">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:NoDebuff[1]}" ExpressionTypeL="String" ExpressionR="${lvar:TelestoPartyMembers[3]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="4" JsonEndpointExpression="http://localhost:51323/" JsonPayloadExpression="{&quot;version&quot;: 1, &quot;id&quot;: 1, &quot;type&quot;: &quot;Bundle&quot;, &quot;payload&quot;: [&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk bind &lt;4&gt;&quot;}}&#xD;&#xA;]}" KeypressType="WindowMessage" KeyPressExpression="{F1}" KeyPressCode="112" KeyPressWindow="FINAL FANTASY XIV" VariableOp="SetString" VariableName="${var:Marker1}" VariableExpression="$(playerName)" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False" Description="Mark Player 4" DescriptionOverride="True">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:NoDebuff[1]}" ExpressionTypeL="String" ExpressionR="${lvar:TelestoPartyMembers[4]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="5" JsonEndpointExpression="http://localhost:51323/" JsonPayloadExpression="{&quot;version&quot;: 1, &quot;id&quot;: 1, &quot;type&quot;: &quot;Bundle&quot;, &quot;payload&quot;: [&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk bind &lt;5&gt;&quot;}}&#xD;&#xA;]}" KeypressType="WindowMessage" KeyPressExpression="{F1}" KeyPressCode="112" KeyPressWindow="FINAL FANTASY XIV" VariableOp="SetString" VariableName="${var:Marker1}" VariableExpression="$(playerName)" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False" Description="Mark Player 5" DescriptionOverride="True">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:NoDebuff[1]}" ExpressionTypeL="String" ExpressionR="${lvar:TelestoPartyMembers[5]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="6" JsonEndpointExpression="http://localhost:51323/" JsonPayloadExpression="{&quot;version&quot;: 1, &quot;id&quot;: 1, &quot;type&quot;: &quot;Bundle&quot;, &quot;payload&quot;: [&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk bind &lt;6&gt;&quot;}}&#xD;&#xA;]}" KeypressType="WindowMessage" KeyPressExpression="{F1}" KeyPressCode="112" KeyPressWindow="FINAL FANTASY XIV" VariableOp="SetString" VariableName="${var:Marker1}" VariableExpression="$(playerName)" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False" Description="Mark Player 6" DescriptionOverride="True">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:NoDebuff[1]}" ExpressionTypeL="String" ExpressionR="${lvar:TelestoPartyMembers[6]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="7" JsonEndpointExpression="http://localhost:51323/" JsonPayloadExpression="{&quot;version&quot;: 1, &quot;id&quot;: 1, &quot;type&quot;: &quot;Bundle&quot;, &quot;payload&quot;: [&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk bind &lt;7&gt;&quot;}}&#xD;&#xA;]}" KeypressType="WindowMessage" KeyPressExpression="{F1}" KeyPressCode="112" KeyPressWindow="FINAL FANTASY XIV" VariableOp="SetString" VariableName="${var:Marker1}" VariableExpression="$(playerName)" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False" Description="Mark Player 7" DescriptionOverride="True">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:NoDebuff[1]}" ExpressionTypeL="String" ExpressionR="${lvar:TelestoPartyMembers[7]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="8" JsonEndpointExpression="http://localhost:51323/" JsonPayloadExpression="{&quot;version&quot;: 1, &quot;id&quot;: 1, &quot;type&quot;: &quot;Bundle&quot;, &quot;payload&quot;: [&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk bind &lt;8&gt;&quot;}}&#xD;&#xA;]}" KeypressType="WindowMessage" KeyPressExpression="{F1}" KeyPressCode="112" KeyPressWindow="FINAL FANTASY XIV" VariableOp="SetString" VariableName="${var:Marker1}" VariableExpression="$(playerName)" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False" Description="Mark Player 8" DescriptionOverride="True">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:NoDebuff[1]}" ExpressionTypeL="String" ExpressionR="${lvar:TelestoPartyMembers[8]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="9" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="b31e0474-05b0-4de4-96bc-e7bb1fe7adaa" TriggerForce="regexp" ActionType="Trigger" ExecutionDelayExpression="300" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+        <Conditions />
+      </Trigger>
+      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Markignore1" Id="b31e0474-05b0-4de4-96bc-e7bb1fe7adaa" RegularExpression="">
+        <Actions>
+          <Action OrderNumber="1" JsonEndpointExpression="http://localhost:51323/" JsonPayloadExpression="{&quot;version&quot;: 1, &quot;id&quot;: 1, &quot;type&quot;: &quot;Bundle&quot;, &quot;payload&quot;: [&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk ignore &lt;1&gt;&quot;}}&#xD;&#xA;]}" KeypressType="WindowMessage" KeyPressExpression="{F1}" KeyPressCode="112" KeyPressWindow="FINAL FANTASY XIV" VariableOp="SetString" VariableName="${var:Marker1}" VariableExpression="$(playerName)" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False" Description="Mark Player 1" DescriptionOverride="True">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:StackBuff[2]}" ExpressionTypeL="String" ExpressionR="${lvar:TelestoPartyMembers[1]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="2" JsonEndpointExpression="http://localhost:51323/" JsonPayloadExpression="{&quot;version&quot;: 1, &quot;id&quot;: 1, &quot;type&quot;: &quot;Bundle&quot;, &quot;payload&quot;: [&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk ignore &lt;2&gt;&quot;}}&#xD;&#xA;]}" KeypressType="WindowMessage" KeyPressExpression="{F1}" KeyPressCode="112" KeyPressWindow="FINAL FANTASY XIV" VariableOp="SetString" VariableName="${var:Marker1}" VariableExpression="$(playerName)" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False" Description="Mark Player 2" DescriptionOverride="True">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:StackBuff[2]}" ExpressionTypeL="String" ExpressionR="${lvar:TelestoPartyMembers[2]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="3" JsonEndpointExpression="http://localhost:51323/" JsonPayloadExpression="{&quot;version&quot;: 1, &quot;id&quot;: 1, &quot;type&quot;: &quot;Bundle&quot;, &quot;payload&quot;: [&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk ignore &lt;3&gt;&quot;}}&#xD;&#xA;]}" KeypressType="WindowMessage" KeyPressExpression="{F1}" KeyPressCode="112" KeyPressWindow="FINAL FANTASY XIV" VariableOp="SetString" VariableName="${var:Marker1}" VariableExpression="$(playerName)" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False" Description="Mark Player 3" DescriptionOverride="True">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:StackBuff[2]}" ExpressionTypeL="String" ExpressionR="${lvar:TelestoPartyMembers[3]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="4" JsonEndpointExpression="http://localhost:51323/" JsonPayloadExpression="{&quot;version&quot;: 1, &quot;id&quot;: 1, &quot;type&quot;: &quot;Bundle&quot;, &quot;payload&quot;: [&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk ignore &lt;4&gt;&quot;}}&#xD;&#xA;]}" KeypressType="WindowMessage" KeyPressExpression="{F1}" KeyPressCode="112" KeyPressWindow="FINAL FANTASY XIV" VariableOp="SetString" VariableName="${var:Marker1}" VariableExpression="$(playerName)" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False" Description="Mark Player 4" DescriptionOverride="True">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:StackBuff[2]}" ExpressionTypeL="String" ExpressionR="${lvar:TelestoPartyMembers[4]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="5" JsonEndpointExpression="http://localhost:51323/" JsonPayloadExpression="{&quot;version&quot;: 1, &quot;id&quot;: 1, &quot;type&quot;: &quot;Bundle&quot;, &quot;payload&quot;: [&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk ignore &lt;5&gt;&quot;}}&#xD;&#xA;]}" KeypressType="WindowMessage" KeyPressExpression="{F1}" KeyPressCode="112" KeyPressWindow="FINAL FANTASY XIV" VariableOp="SetString" VariableName="${var:Marker1}" VariableExpression="$(playerName)" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False" Description="Mark Player 5" DescriptionOverride="True">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:StackBuff[2]}" ExpressionTypeL="String" ExpressionR="${lvar:TelestoPartyMembers[5]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="6" JsonEndpointExpression="http://localhost:51323/" JsonPayloadExpression="{&quot;version&quot;: 1, &quot;id&quot;: 1, &quot;type&quot;: &quot;Bundle&quot;, &quot;payload&quot;: [&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk ignore &lt;6&gt;&quot;}}&#xD;&#xA;]}" KeypressType="WindowMessage" KeyPressExpression="{F1}" KeyPressCode="112" KeyPressWindow="FINAL FANTASY XIV" VariableOp="SetString" VariableName="${var:Marker1}" VariableExpression="$(playerName)" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False" Description="Mark Player 6" DescriptionOverride="True">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:StackBuff[2]}" ExpressionTypeL="String" ExpressionR="${lvar:TelestoPartyMembers[6]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="7" JsonEndpointExpression="http://localhost:51323/" JsonPayloadExpression="{&quot;version&quot;: 1, &quot;id&quot;: 1, &quot;type&quot;: &quot;Bundle&quot;, &quot;payload&quot;: [&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk ignore &lt;7&gt;&quot;}}&#xD;&#xA;]}" KeypressType="WindowMessage" KeyPressExpression="{F1}" KeyPressCode="112" KeyPressWindow="FINAL FANTASY XIV" VariableOp="SetString" VariableName="${var:Marker1}" VariableExpression="$(playerName)" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False" Description="Mark Player 7" DescriptionOverride="True">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:StackBuff[2]}" ExpressionTypeL="String" ExpressionR="${lvar:TelestoPartyMembers[7]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="8" JsonEndpointExpression="http://localhost:51323/" JsonPayloadExpression="{&quot;version&quot;: 1, &quot;id&quot;: 1, &quot;type&quot;: &quot;Bundle&quot;, &quot;payload&quot;: [&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk ignore &lt;8&gt;&quot;}}&#xD;&#xA;]}" KeypressType="WindowMessage" KeyPressExpression="{F1}" KeyPressCode="112" KeyPressWindow="FINAL FANTASY XIV" VariableOp="SetString" VariableName="${var:Marker1}" VariableExpression="$(playerName)" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False" Description="Mark Player 8" DescriptionOverride="True">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:StackBuff[2]}" ExpressionTypeL="String" ExpressionR="${lvar:TelestoPartyMembers[8]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="9" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="0c2bc1e2-9ea0-471c-9778-b89adae2c212" TriggerForce="regexp" ActionType="Trigger" ExecutionDelayExpression="300">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+        <Conditions />
+      </Trigger>
+      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Markignore2" Id="0c2bc1e2-9ea0-471c-9778-b89adae2c212" RegularExpression="">
+        <Actions>
+          <Action OrderNumber="1" JsonEndpointExpression="http://localhost:51323/" JsonPayloadExpression="{&quot;version&quot;: 1, &quot;id&quot;: 1, &quot;type&quot;: &quot;Bundle&quot;, &quot;payload&quot;: [&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk ignore &lt;1&gt;&quot;}}&#xD;&#xA;]}" KeypressType="WindowMessage" KeyPressExpression="{F1}" KeyPressCode="112" KeyPressWindow="FINAL FANTASY XIV" VariableOp="SetString" VariableName="${var:Marker1}" VariableExpression="$(playerName)" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False" Description="Mark Player 1" DescriptionOverride="True">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:NoDebuff[2]}" ExpressionTypeL="String" ExpressionR="${lvar:TelestoPartyMembers[1]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="2" JsonEndpointExpression="http://localhost:51323/" JsonPayloadExpression="{&quot;version&quot;: 1, &quot;id&quot;: 1, &quot;type&quot;: &quot;Bundle&quot;, &quot;payload&quot;: [&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk ignore &lt;2&gt;&quot;}}&#xD;&#xA;]}" KeypressType="WindowMessage" KeyPressExpression="{F1}" KeyPressCode="112" KeyPressWindow="FINAL FANTASY XIV" VariableOp="SetString" VariableName="${var:Marker1}" VariableExpression="$(playerName)" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False" Description="Mark Player 2" DescriptionOverride="True">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:NoDebuff[2]}" ExpressionTypeL="String" ExpressionR="${lvar:TelestoPartyMembers[2]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="3" JsonEndpointExpression="http://localhost:51323/" JsonPayloadExpression="{&quot;version&quot;: 1, &quot;id&quot;: 1, &quot;type&quot;: &quot;Bundle&quot;, &quot;payload&quot;: [&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk ignore &lt;3&gt;&quot;}}&#xD;&#xA;]}" KeypressType="WindowMessage" KeyPressExpression="{F1}" KeyPressCode="112" KeyPressWindow="FINAL FANTASY XIV" VariableOp="SetString" VariableName="${var:Marker1}" VariableExpression="$(playerName)" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False" Description="Mark Player 3" DescriptionOverride="True">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:NoDebuff[2]}" ExpressionTypeL="String" ExpressionR="${lvar:TelestoPartyMembers[3]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="4" JsonEndpointExpression="http://localhost:51323/" JsonPayloadExpression="{&quot;version&quot;: 1, &quot;id&quot;: 1, &quot;type&quot;: &quot;Bundle&quot;, &quot;payload&quot;: [&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk ignore &lt;4&gt;&quot;}}&#xD;&#xA;]}" KeypressType="WindowMessage" KeyPressExpression="{F1}" KeyPressCode="112" KeyPressWindow="FINAL FANTASY XIV" VariableOp="SetString" VariableName="${var:Marker1}" VariableExpression="$(playerName)" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False" Description="Mark Player 4" DescriptionOverride="True">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:NoDebuff[2]}" ExpressionTypeL="String" ExpressionR="${lvar:TelestoPartyMembers[4]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="5" JsonEndpointExpression="http://localhost:51323/" JsonPayloadExpression="{&quot;version&quot;: 1, &quot;id&quot;: 1, &quot;type&quot;: &quot;Bundle&quot;, &quot;payload&quot;: [&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk ignore &lt;5&gt;&quot;}}&#xD;&#xA;]}" KeypressType="WindowMessage" KeyPressExpression="{F1}" KeyPressCode="112" KeyPressWindow="FINAL FANTASY XIV" VariableOp="SetString" VariableName="${var:Marker1}" VariableExpression="$(playerName)" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False" Description="Mark Player 5" DescriptionOverride="True">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:NoDebuff[2]}" ExpressionTypeL="String" ExpressionR="${lvar:TelestoPartyMembers[5]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="6" JsonEndpointExpression="http://localhost:51323/" JsonPayloadExpression="{&quot;version&quot;: 1, &quot;id&quot;: 1, &quot;type&quot;: &quot;Bundle&quot;, &quot;payload&quot;: [&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk ignore &lt;6&gt;&quot;}}&#xD;&#xA;]}" KeypressType="WindowMessage" KeyPressExpression="{F1}" KeyPressCode="112" KeyPressWindow="FINAL FANTASY XIV" VariableOp="SetString" VariableName="${var:Marker1}" VariableExpression="$(playerName)" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False" Description="Mark Player 6" DescriptionOverride="True">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:NoDebuff[2]}" ExpressionTypeL="String" ExpressionR="${lvar:TelestoPartyMembers[6]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="7" JsonEndpointExpression="http://localhost:51323/" JsonPayloadExpression="{&quot;version&quot;: 1, &quot;id&quot;: 1, &quot;type&quot;: &quot;Bundle&quot;, &quot;payload&quot;: [&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk ignore &lt;7&gt;&quot;}}&#xD;&#xA;]}" KeypressType="WindowMessage" KeyPressExpression="{F1}" KeyPressCode="112" KeyPressWindow="FINAL FANTASY XIV" VariableOp="SetString" VariableName="${var:Marker1}" VariableExpression="$(playerName)" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False" Description="Mark Player 7" DescriptionOverride="True">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:NoDebuff[2]}" ExpressionTypeL="String" ExpressionR="${lvar:TelestoPartyMembers[7]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="8" JsonEndpointExpression="http://localhost:51323/" JsonPayloadExpression="{&quot;version&quot;: 1, &quot;id&quot;: 1, &quot;type&quot;: &quot;Bundle&quot;, &quot;payload&quot;: [&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk ignore &lt;8&gt;&quot;}}&#xD;&#xA;]}" KeypressType="WindowMessage" KeyPressExpression="{F1}" KeyPressCode="112" KeyPressWindow="FINAL FANTASY XIV" VariableOp="SetString" VariableName="${var:Marker1}" VariableExpression="$(playerName)" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False" Description="Mark Player 8" DescriptionOverride="True">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:NoDebuff[2]}" ExpressionTypeL="String" ExpressionR="${lvar:TelestoPartyMembers[8]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="9" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="4d4cf48a-31a7-4f99-af3b-8eb73674b27e" TriggerForce="regexp" ActionType="Trigger" ExecutionDelayExpression="20000" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+        <Conditions />
+      </Trigger>
+      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="WipeResetEntangling" Id="4d4cf48a-31a7-4f99-af3b-8eb73674b27e" RegularExpression="^33\|[^|]*\|[^|]*\|400000(?&gt;03|10)\|">
+        <Actions>
+          <Action OrderNumber="1" ListVariableName="ListCount" VariableName="FlameCounter" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="2" ListVariableName="DebuffList" ListVariableExpression="${name}" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="3" ListVariableName="NoDebuff" ListVariableExpression="${name}" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="4" ListVariableName="StackBuff" ListVariableExpression="${name}" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="5" JsonEndpointExpression="http://localhost:51323/" JsonPayloadExpression="{&quot;version&quot;: 1, &quot;id&quot;: 1, &quot;type&quot;: &quot;Bundle&quot;, &quot;payload&quot;: [&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk clear &lt;1&gt;&quot;}},&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk clear &lt;2&gt;&quot;}},&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk clear &lt;3&gt;&quot;}},&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk clear &lt;4&gt;&quot;}},&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk clear &lt;5&gt;&quot;}},&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk clear &lt;6&gt;&quot;}},&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk clear &lt;7&gt;&quot;}},&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk clear &lt;8&gt;&quot;}}&#xD;&#xA;]}" KeypressType="WindowMessage" KeyPressExpression="{F9}" KeyPressCode="120" KeyPressWindow="FINAL FANTASY XIV" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+        <Conditions />
+      </Trigger>
+      <Trigger Enabled="true" Source="FFXIVNetwork" Name="$ReadMeV1.02$" Id="b19cbfe6-c678-4468-b10f-03c627a3ab7c" RegularExpression="https://github.com/KingPendragoon/StackingFlameAM/blob/main/README.md" Description="This utilizes Telesto To mark players and thus needs that.  For instructions on how to install telesto.&#xD;&#xA;https://github.com/paissaheavyindustries/Dalamud-Repo">
+        <Actions />
+        <Condition Enabled="false" Grouping="Or" />
+        <Conditions />
+      </Trigger>
+      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Telesto GetPartyMembers" Id="efc00754-164b-4ad6-8e38-819081fe1312" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6D45">
+        <Actions>
+          <Action OrderNumber="1" JsonResultVariable="TelestoPartyMembers" JsonEndpointExpression="http://localhost:51323" JsonPayloadExpression="{ &quot;version&quot;: 1, &quot;id&quot;: 123456, &quot;type&quot;: &quot;GetPartyMembers&quot; }" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="2" OBSEndPoint="" VariableOp="QueryJsonPathList" VariableName="TelestoPartyMembers" VariableJsonTarget="TelestoPartyMembers" VariableExpression="$.response[*].fullname" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="3" JsonEndpointExpression="http://localhost:51323/" JsonPayloadExpression="{&quot;version&quot;: 1, &quot;id&quot;: 1, &quot;type&quot;: &quot;Bundle&quot;, &quot;payload&quot;: [&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk clear &lt;1&gt;&quot;}},&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk clear &lt;2&gt;&quot;}},&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk clear &lt;3&gt;&quot;}},&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk clear &lt;4&gt;&quot;}},&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk clear &lt;5&gt;&quot;}},&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk clear &lt;6&gt;&quot;}},&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk clear &lt;7&gt;&quot;}},&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk clear &lt;8&gt;&quot;}}&#xD;&#xA;]}" KeypressType="WindowMessage" KeyPressExpression="{F9}" KeyPressCode="120" KeyPressWindow="FINAL FANTASY XIV" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="4" LogMessageText="${_responsecode}" LogLevel="Verbose" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="LogMessage">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="5" LogMessageText="Player 1: ${lvar:TelestoPartyMembers[1]}" LogLevel="Info" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="LogMessage">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="6" LogMessageText="Player 2: ${lvar:TelestoPartyMembers[2]}" LogLevel="Info" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="LogMessage">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="7" LogMessageText="Player 3: ${lvar:TelestoPartyMembers[3]}" LogLevel="Info" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="LogMessage">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="8" LogMessageText="Player 4: ${lvar:TelestoPartyMembers[4]}" LogLevel="Info" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="LogMessage">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="9" LogMessageText="Player 5: ${lvar:TelestoPartyMembers[5]}" LogLevel="Info" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="LogMessage">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="10" LogMessageText="Player 6: ${lvar:TelestoPartyMembers[6]}" LogLevel="Info" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="LogMessage">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="11" LogMessageText="Player 7: ${lvar:TelestoPartyMembers[7]}" LogLevel="Info" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="LogMessage">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="12" LogMessageText="Player 8: ${lvar:TelestoPartyMembers[8]}" LogLevel="Info" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="LogMessage">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+        <Conditions />
+      </Trigger>
+    </Triggers>
+  </ExportedFolder>
+</TriggernometryExport>
