@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <TriggernometryExport Version="1">
-  <ExportedFolder Id="9499dc4c-4f33-4a93-9c46-0c0a4cac2193" Name="EntanglingFlameAM v1.02 (modified by LongPP v7) " Enabled="true">
+  <ExportedFolder Id="9499dc4c-4f33-4a93-9c46-0c0a4cac2193" Name="EntanglingFlameAM v1.02 (modified by LongPP v8) " Enabled="true">
     <Folders>
       <Folder Id="1a3ccbef-f6a6-499d-856a-1f0f657cf4b6" Name="Added by LongPP" Enabled="true">
         <Folders />
@@ -124,7 +124,7 @@
               <Action OrderNumber="6" ListVariableOp="Set" ListVariableName="NoDebuffSort" ListVariableExpression="${lvar:NoDebuff[1]}" ListVariableIndex="2" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
                 <Condition Enabled="false" Grouping="And" />
               </Action>
-              <Action OrderNumber="7" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" Enabled="False" ActionType="Placeholder" ExecutionDelayExpression="100">
+              <Action OrderNumber="7" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Placeholder" ExecutionDelayExpression="50">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
               <Action OrderNumber="8" ListVariableOp="Copy" ListVariableName="StackBuffSort" ListVariableTarget="StackBuff" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
@@ -149,7 +149,7 @@
                   </ConditionGroup>
                 </Condition>
               </Action>
-              <Action OrderNumber="10" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" Enabled="False" ActionType="Placeholder">
+              <Action OrderNumber="10" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Placeholder" ExecutionDelayExpression="50">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
               <Action OrderNumber="11" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="dc22db5a-597e-4056-b677-1ee39a798d68" TriggerForce="regexp" ActionType="Trigger">
@@ -158,7 +158,7 @@
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
-          <Trigger Enabled="true" Source="FFXIVNetwork" Name="MortalVowCurrent" Id="b5a22c94-726a-4a82-bfcc-f8accccbfb74" RegularExpression="^(?&lt;type&gt;2[12])\|(?&lt;timestamp&gt;[^|]*)\|(?&lt;sourceId&gt;[^|]*)\|Nidhogg\|6D3[0|1]\|Mortal Vow\|(?&lt;targetId&gt;[^|]*)\|(?&lt;target&gt;[^|]*)\|">
+          <Trigger Enabled="true" Source="FFXIVNetwork" Name="MortalVowCurrent" Id="b5a22c94-726a-4a82-bfcc-f8accccbfb74" RegularExpression="^2[12]\|[^|]*\|[^|]*\|Nidhogg\|6D3[0|1]\|[^|]*\|[^|]*\|(?&lt;target&gt;[^|]*)\|">
             <Actions>
               <Action OrderNumber="1" OBSEndPoint="" VariableOp="SetString" VariableName="MortalVowCurrent" VariableExpression="${target}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                 <Condition Enabled="false" Grouping="Or" />
