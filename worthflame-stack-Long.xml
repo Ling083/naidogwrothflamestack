@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <TriggernometryExport Version="1">
-  <ExportedFolder Id="9499dc4c-4f33-4a93-9c46-0c0a4cac2193" Name="EntanglingFlameAM v1.02 (modified by LongPP v8) " Enabled="true">
+  <ExportedFolder Id="9499dc4c-4f33-4a93-9c46-0c0a4cac2193" Name="EntanglingFlameAM v1.02 (modified by LongPP v9) " Enabled="true">
     <Folders>
       <Folder Id="1a3ccbef-f6a6-499d-856a-1f0f657cf4b6" Name="Added by LongPP" Enabled="true">
         <Folders />
@@ -10,73 +10,70 @@
               <Action OrderNumber="1" ListVariableName="LongJobPriority" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="2" OBSEndPoint="" UseTTSTextExpression="Bind Priority" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" Enabled="False" ActionType="UseTTS">
+              <Action OrderNumber="2" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="SCH" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="3" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="SCH" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+              <Action OrderNumber="3" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="WHM" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="4" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="WHM" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+              <Action OrderNumber="4" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="SGE" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="5" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="SGE" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+              <Action OrderNumber="5" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="AST" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="6" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="AST" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+              <Action OrderNumber="6" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="MCH" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="7" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="MCH" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+              <Action OrderNumber="7" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="BRD" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="8" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="BRD" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+              <Action OrderNumber="8" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="DNC" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="9" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="DNC" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+              <Action OrderNumber="9" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="BLM" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="10" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="BLM" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+              <Action OrderNumber="10" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="RDM" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="11" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="RDM" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+              <Action OrderNumber="11" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="SMN" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="12" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="SMN" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+              <Action OrderNumber="12" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="RPR" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="13" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="RPR" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+              <Action OrderNumber="13" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="DRG" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="14" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="DRG" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+              <Action OrderNumber="14" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="MNK" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="15" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="MNK" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+              <Action OrderNumber="15" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="SAM" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="16" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="SAM" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+              <Action OrderNumber="16" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="NIN" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="17" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="NIN" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+              <Action OrderNumber="17" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="PLD" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="18" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="PLD" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+              <Action OrderNumber="18" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="DRK" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="19" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="DRK" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+              <Action OrderNumber="19" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="GBN" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="20" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="GBN" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+              <Action OrderNumber="20" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="WAR" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="21" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="WAR" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-              <Action OrderNumber="22" OBSEndPoint="" UseTTSTextExpression="Ignore Priority" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" Enabled="False" ActionType="UseTTS">
+              <Action OrderNumber="21" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8877715f-2786-4ee2-8177-6ba6098385b7" TriggerForce="regexp" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
             </Actions>
-            <Condition Enabled="true" Grouping="Or">
-              <ConditionSingle Enabled="true" ExpressionL="${lvar:LongJobPriority.size}" ExpressionTypeL="Numeric" ExpressionR="19" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
-              <ConditionSingle Enabled="true" ExpressionL="${elvar:LongJobPriority}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+            <Condition Enabled="false" Grouping="Or">
+              <ConditionSingle Enabled="false" ExpressionL="${lvar:LongJobPriority.size}" ExpressionTypeL="Numeric" ExpressionR="19" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
+              <ConditionSingle Enabled="false" ExpressionL="${elvar:LongJobPriority}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
             </Condition>
           </Trigger>
           <Trigger Enabled="true" Sequential="True" Name="sorting" Id="8877715f-2786-4ee2-8177-6ba6098385b7" RegularExpression="">
@@ -179,7 +176,7 @@
               <ConditionSingle Enabled="true" ExpressionL="${lvar:DebuffList.size}" ExpressionTypeL="Numeric" ExpressionR="6" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
             </Condition>
           </Action>
-          <Action OrderNumber="5" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8877715f-2786-4ee2-8177-6ba6098385b7" TriggerForce="regexp" ActionType="Trigger" Asynchronous="False">
+          <Action OrderNumber="5" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="16d60e04-81f3-451f-93c5-6b4702966ad5" TriggerForce="regexp" ActionType="Trigger" Asynchronous="False">
             <Condition Enabled="true" Grouping="Or">
               <ConditionSingle Enabled="true" ExpressionL="${lvar:DebuffList.size}" ExpressionTypeL="Numeric" ExpressionR="6" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
             </Condition>
