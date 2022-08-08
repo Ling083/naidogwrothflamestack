@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <TriggernometryExport Version="1">
-  <ExportedFolder Id="9499dc4c-4f33-4a93-9c46-0c0a4cac2193" Name="EntanglingFlameAM v1.02 (modified by LongPP v9) " Enabled="true">
+  <ExportedFolder Id="76a42e71-c9da-4e8e-a93e-056a485a33b6" Name="EntanglingFlameAM v1.02 (modified by LongPP v10) " Enabled="true">
     <Folders>
-      <Folder Id="1a3ccbef-f6a6-499d-856a-1f0f657cf4b6" Name="Added by LongPP" Enabled="true">
+      <Folder Id="e49dafa1-5967-431e-a679-1ac1a80e9ccd" Name="Added by LongPP" Enabled="true">
         <Folders />
         <Triggers>
-          <Trigger Enabled="true" Sequential="True" Name="jobs priority (drag the setting here)" Id="16d60e04-81f3-451f-93c5-6b4702966ad5" RegularExpression="">
+          <Trigger Enabled="true" Sequential="True" Name="jobs priority (drag the setting here)" Id="d1ae3653-5d6b-4589-ac1e-46585ba5f74b" RegularExpression="">
             <Actions>
               <Action OrderNumber="1" ListVariableName="LongJobPriority" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
                 <Condition Enabled="false" Grouping="Or" />
@@ -67,7 +67,7 @@
               <Action OrderNumber="20" ListVariableOp="Push" ListVariableName="LongJobPriority" ListVariableExpression="WAR" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="21" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8877715f-2786-4ee2-8177-6ba6098385b7" TriggerForce="regexp" ActionType="Trigger">
+              <Action OrderNumber="21" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="2aae1833-fb49-4e00-80d0-42f2cb0cfdab" TriggerForce="regexp" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
             </Actions>
@@ -76,7 +76,7 @@
               <ConditionSingle Enabled="false" ExpressionL="${elvar:LongJobPriority}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
             </Condition>
           </Trigger>
-          <Trigger Enabled="true" Sequential="True" Name="sorting" Id="8877715f-2786-4ee2-8177-6ba6098385b7" RegularExpression="">
+          <Trigger Enabled="true" Sequential="True" Name="sorting" Id="2aae1833-fb49-4e00-80d0-42f2cb0cfdab" RegularExpression="">
             <Actions>
               <Action OrderNumber="1" ListVariableOp="Copy" ListVariableName="StackBuff" ListVariableTarget="StackBuffSort" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
                 <Condition Enabled="false" Grouping="Or" />
@@ -98,7 +98,7 @@
               <Action OrderNumber="6" ListVariableOp="Set" ListVariableName="NoDebuffSort" ListVariableExpression="${lvar:NoDebuff[1]}" ListVariableIndex="2" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
                 <Condition Enabled="false" Grouping="And" />
               </Action>
-              <Action OrderNumber="7" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Placeholder" ExecutionDelayExpression="50">
+              <Action OrderNumber="7" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" Enabled="False" ActionType="Placeholder" ExecutionDelayExpression="50">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
               <Action OrderNumber="8" ListVariableOp="Copy" ListVariableName="StackBuffSort" ListVariableTarget="StackBuff" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
@@ -107,8 +107,9 @@
                   <ConditionSingle Enabled="false" ExpressionL="${lvar:StackBuffSort[1]}" ExpressionTypeL="Numeric" ExpressionR="${lvar:StackBuff[2]}" ExpressionTypeR="Numeric" ConditionType="StringEqualNocase" />
                   <ConditionSingle Enabled="true" ExpressionL="${lvar:StackBuff[2]}" ExpressionTypeL="String" ExpressionR="${var:MortalVowCurrent}" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
                   <ConditionGroup Enabled="true" Grouping="Or">
-                    <ConditionSingle Enabled="true" ExpressionL="${lvar:LongJobPriority.indexof(${_ffxivparty[${lvar:StackBuff[1]}].job})}" ExpressionTypeL="Numeric" ExpressionR="${lvar:LongJobPriority.indexof(${_ffxivparty[${lvar:StackBuff[2]}].job})}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    <ConditionSingle Enabled="true" ExpressionL="${lvar:LongJobPriority.indexof(${lvar:TelestoPartyJob[${lvar:TelestoPartyMembers.indexof(${lvar:StackBuff[1]})}]})}" ExpressionTypeL="Numeric" ExpressionR="${lvar:LongJobPriority.indexof(${lvar:TelestoPartyJob[${lvar:TelestoPartyMembers.indexof(${lvar:StackBuff[2]})}]})}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
                     <ConditionSingle Enabled="true" ExpressionL="${lvar:StackBuff[1]}" ExpressionTypeL="String" ExpressionR="${var:MortalVowCurrent}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    <ConditionSingle Enabled="true" ExpressionL="${lvar:LongJobPriority.indexof(${_ffxivparty[${lvar:StackBuff[1]}].job})}" ExpressionTypeL="Numeric" ExpressionR="${lvar:LongJobPriority.indexof(${_ffxivparty[${lvar:StackBuff[2]}].job})}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
                   </ConditionGroup>
                 </Condition>
               </Action>
@@ -120,19 +121,20 @@
                   <ConditionGroup Enabled="true" Grouping="Or">
                     <ConditionSingle Enabled="true" ExpressionL="${lvar:LongJobPriority.indexof(${_ffxivparty[${lvar:NoDebuff[1]}].job})}" ExpressionTypeL="Numeric" ExpressionR="${lvar:LongJobPriority.indexof(${_ffxivparty[${lvar:NoDebuff[2]}].job})}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
                     <ConditionSingle Enabled="true" ExpressionL="${lvar:NoDebuff[1]}" ExpressionTypeL="String" ExpressionR="${var:MortalVowCurrent}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    <ConditionSingle Enabled="true" ExpressionL="${lvar:LongJobPriority.indexof(${lvar:TelestoPartyJob[${lvar:TelestoPartyMembers.indexof(${lvar:NoDebuff[1]})}]})}" ExpressionTypeL="Numeric" ExpressionR="${lvar:LongJobPriority.indexof(${lvar:TelestoPartyJob[${lvar:TelestoPartyMembers.indexof(${lvar:NoDebuff[2]})}]})}" ExpressionTypeR="Numeric" ConditionType="StringEqualNocase" />
                   </ConditionGroup>
                 </Condition>
               </Action>
-              <Action OrderNumber="10" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Placeholder" ExecutionDelayExpression="50">
+              <Action OrderNumber="10" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" Enabled="False" ActionType="Placeholder" ExecutionDelayExpression="50">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
-              <Action OrderNumber="11" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="dc22db5a-597e-4056-b677-1ee39a798d68" TriggerForce="regexp" ActionType="Trigger">
+              <Action OrderNumber="11" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="ab9d4154-2cff-433d-a3e8-97d973cb0f02" TriggerForce="regexp" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
-          <Trigger Enabled="true" Source="FFXIVNetwork" Name="MortalVowCurrent" Id="b5a22c94-726a-4a82-bfcc-f8accccbfb74" RegularExpression="^2[12]\|[^|]*\|[^|]*\|Nidhogg\|6D3[0|1]\|[^|]*\|[^|]*\|(?&lt;target&gt;[^|]*)\|">
+          <Trigger Enabled="true" Source="FFXIVNetwork" Name="MortalVowCurrent" Id="d95c8652-764a-4ec7-96a3-fe1b670edf18" RegularExpression="^2[12]\|[^|]*\|[^|]*\|Nidhogg\|6D3[0|1]\|[^|]*\|[^|]*\|(?&lt;target&gt;[^|]*)\|">
             <Actions>
               <Action OrderNumber="1" OBSEndPoint="" VariableOp="SetString" VariableName="MortalVowCurrent" VariableExpression="${target}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                 <Condition Enabled="false" Grouping="Or" />
@@ -144,9 +146,9 @@
       </Folder>
     </Folders>
     <Triggers>
-      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="GetPlayer (modified)" Id="ee25cfcb-f0b7-4d7b-aa17-23a8eff811bf" RegularExpression="^26\|[^|]*\|AC(?&lt;id&gt;[67])\|[^|]*\|[^|]*\|[^|]*\|\|[^|]*\|(?&lt;name&gt;[^|]*)" MutexToCapture="Entagle">
+      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="GetPlayer (modified)" Id="6caf735d-32a7-4f1a-bf00-c376aeb35b27" RegularExpression="^26\|[^|]*\|AC(?&lt;id&gt;[67])\|[^|]*\|[^|]*\|[^|]*\|\|[^|]*\|(?&lt;name&gt;[^|]*)" MutexToCapture="Entagle">
         <Actions>
-          <Action OrderNumber="-1" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="16d60e04-81f3-451f-93c5-6b4702966ad5" TriggerForce="regexp" ActionType="Trigger">
+          <Action OrderNumber="-1" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="d1ae3653-5d6b-4589-ac1e-46585ba5f74b" TriggerForce="regexp" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
           <Action OrderNumber="0" ListVariableOp="Push" ListVariableName="DebuffList" ListVariableExpression="${name}" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable" Asynchronous="False">
@@ -176,7 +178,7 @@
               <ConditionSingle Enabled="true" ExpressionL="${lvar:DebuffList.size}" ExpressionTypeL="Numeric" ExpressionR="6" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
             </Condition>
           </Action>
-          <Action OrderNumber="5" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="16d60e04-81f3-451f-93c5-6b4702966ad5" TriggerForce="regexp" ActionType="Trigger" Asynchronous="False">
+          <Action OrderNumber="5" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="d1ae3653-5d6b-4589-ac1e-46585ba5f74b" TriggerForce="regexp" ActionType="Trigger" Asynchronous="False">
             <Condition Enabled="true" Grouping="Or">
               <ConditionSingle Enabled="true" ExpressionL="${lvar:DebuffList.size}" ExpressionTypeL="Numeric" ExpressionR="6" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
             </Condition>
@@ -196,7 +198,7 @@
         </Actions>
         <Condition Enabled="false" Grouping="Or" />
       </Trigger>
-      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="MarkBind1" Id="dc22db5a-597e-4056-b677-1ee39a798d68" RegularExpression="">
+      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="MarkBind1" Id="ab9d4154-2cff-433d-a3e8-97d973cb0f02" RegularExpression="">
         <Actions>
           <Action OrderNumber="1" JsonEndpointExpression="http://localhost:51323/" JsonPayloadExpression="{&quot;version&quot;: 1, &quot;id&quot;: 1, &quot;type&quot;: &quot;Bundle&quot;, &quot;payload&quot;: [&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk bind &lt;1&gt;&quot;}}&#xD;&#xA;]}" KeypressType="WindowMessage" KeyPressExpression="{F1}" KeyPressCode="112" KeyPressWindow="FINAL FANTASY XIV" VariableOp="SetString" VariableName="${var:Marker1}" VariableExpression="$(playerName)" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False" Description="Mark Player 1" DescriptionOverride="True">
             <Condition Enabled="true" Grouping="And">
@@ -238,13 +240,13 @@
               <ConditionSingle Enabled="true" ExpressionL="${lvar:StackBuff[1]}" ExpressionTypeL="String" ExpressionR="${lvar:TelestoPartyMembers[8]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
             </Condition>
           </Action>
-          <Action OrderNumber="9" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="89e91437-1af4-4664-8401-e468b74f3352" TriggerForce="regexp" ActionType="Trigger" ExecutionDelayExpression="300" Asynchronous="False">
+          <Action OrderNumber="9" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="3f1107ac-21fd-4b64-a2b2-880c54bdb358" TriggerForce="regexp" ActionType="Trigger" ExecutionDelayExpression="300" Asynchronous="False">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
         </Actions>
         <Condition Enabled="false" Grouping="Or" />
       </Trigger>
-      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="MarkBind2" Id="89e91437-1af4-4664-8401-e468b74f3352" RegularExpression="">
+      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="MarkBind2" Id="3f1107ac-21fd-4b64-a2b2-880c54bdb358" RegularExpression="">
         <Actions>
           <Action OrderNumber="1" JsonEndpointExpression="http://localhost:51323/" JsonPayloadExpression="{&quot;version&quot;: 1, &quot;id&quot;: 1, &quot;type&quot;: &quot;Bundle&quot;, &quot;payload&quot;: [&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk bind &lt;1&gt;&quot;}}&#xD;&#xA;]}" KeypressType="WindowMessage" KeyPressExpression="{F1}" KeyPressCode="112" KeyPressWindow="FINAL FANTASY XIV" VariableOp="SetString" VariableName="${var:Marker1}" VariableExpression="$(playerName)" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False" Description="Mark Player 1" DescriptionOverride="True">
             <Condition Enabled="true" Grouping="And">
@@ -286,13 +288,13 @@
               <ConditionSingle Enabled="true" ExpressionL="${lvar:NoDebuff[1]}" ExpressionTypeL="String" ExpressionR="${lvar:TelestoPartyMembers[8]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
             </Condition>
           </Action>
-          <Action OrderNumber="9" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="b31e0474-05b0-4de4-96bc-e7bb1fe7adaa" TriggerForce="regexp" ActionType="Trigger" ExecutionDelayExpression="300" Asynchronous="False">
+          <Action OrderNumber="9" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="64244400-80e5-471a-ae6d-93f9a5b4dd87" TriggerForce="regexp" ActionType="Trigger" ExecutionDelayExpression="300" Asynchronous="False">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
         </Actions>
         <Condition Enabled="false" Grouping="Or" />
       </Trigger>
-      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Markignore1" Id="b31e0474-05b0-4de4-96bc-e7bb1fe7adaa" RegularExpression="">
+      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Markignore1" Id="64244400-80e5-471a-ae6d-93f9a5b4dd87" RegularExpression="">
         <Actions>
           <Action OrderNumber="1" JsonEndpointExpression="http://localhost:51323/" JsonPayloadExpression="{&quot;version&quot;: 1, &quot;id&quot;: 1, &quot;type&quot;: &quot;Bundle&quot;, &quot;payload&quot;: [&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk ignore &lt;1&gt;&quot;}}&#xD;&#xA;]}" KeypressType="WindowMessage" KeyPressExpression="{F1}" KeyPressCode="112" KeyPressWindow="FINAL FANTASY XIV" VariableOp="SetString" VariableName="${var:Marker1}" VariableExpression="$(playerName)" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False" Description="Mark Player 1" DescriptionOverride="True">
             <Condition Enabled="true" Grouping="And">
@@ -334,13 +336,13 @@
               <ConditionSingle Enabled="true" ExpressionL="${lvar:StackBuff[2]}" ExpressionTypeL="String" ExpressionR="${lvar:TelestoPartyMembers[8]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
             </Condition>
           </Action>
-          <Action OrderNumber="9" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="0c2bc1e2-9ea0-471c-9778-b89adae2c212" TriggerForce="regexp" ActionType="Trigger" ExecutionDelayExpression="300">
+          <Action OrderNumber="9" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="04464d52-623a-4a4a-bceb-a2b7122fb27d" TriggerForce="regexp" ActionType="Trigger" ExecutionDelayExpression="300">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
         </Actions>
         <Condition Enabled="false" Grouping="Or" />
       </Trigger>
-      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Markignore2" Id="0c2bc1e2-9ea0-471c-9778-b89adae2c212" RegularExpression="">
+      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Markignore2" Id="04464d52-623a-4a4a-bceb-a2b7122fb27d" RegularExpression="">
         <Actions>
           <Action OrderNumber="1" JsonEndpointExpression="http://localhost:51323/" JsonPayloadExpression="{&quot;version&quot;: 1, &quot;id&quot;: 1, &quot;type&quot;: &quot;Bundle&quot;, &quot;payload&quot;: [&#xD;&#xA; {&quot;version&quot;: 1, &quot;id&quot;: 2, &quot;type&quot;: &quot;ExecuteCommand&quot;, &quot;payload&quot;: {&quot;command&quot;: &quot;/mk ignore &lt;1&gt;&quot;}}&#xD;&#xA;]}" KeypressType="WindowMessage" KeyPressExpression="{F1}" KeyPressCode="112" KeyPressWindow="FINAL FANTASY XIV" VariableOp="SetString" VariableName="${var:Marker1}" VariableExpression="$(playerName)" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson" Asynchronous="False" Description="Mark Player 1" DescriptionOverride="True">
             <Condition Enabled="true" Grouping="And">
@@ -382,13 +384,13 @@
               <ConditionSingle Enabled="true" ExpressionL="${lvar:NoDebuff[2]}" ExpressionTypeL="String" ExpressionR="${lvar:TelestoPartyMembers[8]}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
             </Condition>
           </Action>
-          <Action OrderNumber="9" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="4d4cf48a-31a7-4f99-af3b-8eb73674b27e" TriggerForce="regexp" ActionType="Trigger" ExecutionDelayExpression="20000" Asynchronous="False">
+          <Action OrderNumber="9" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="30dd6ca7-3b85-43d6-a3ee-daa041f57aba" TriggerForce="regexp" ActionType="Trigger" ExecutionDelayExpression="20000" Asynchronous="False">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
         </Actions>
         <Condition Enabled="false" Grouping="Or" />
       </Trigger>
-      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="WipeResetEntangling" Id="4d4cf48a-31a7-4f99-af3b-8eb73674b27e" RegularExpression="^33\|[^|]*\|[^|]*\|400000(?&gt;03|10)\|">
+      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="WipeResetEntangling" Id="30dd6ca7-3b85-43d6-a3ee-daa041f57aba" RegularExpression="^33\|[^|]*\|[^|]*\|400000(?&gt;03|10)\|">
         <Actions>
           <Action OrderNumber="1" ListVariableName="ListCount" VariableName="FlameCounter" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
             <Condition Enabled="false" Grouping="Or" />
@@ -420,11 +422,11 @@
         </Actions>
         <Condition Enabled="false" Grouping="Or" />
       </Trigger>
-      <Trigger Enabled="true" Source="FFXIVNetwork" Name="$ReadMeV1.02$" Id="b19cbfe6-c678-4468-b10f-03c627a3ab7c" RegularExpression="https://github.com/KingPendragoon/StackingFlameAM/blob/main/README.md" Description="This utilizes Telesto To mark players and thus needs that.  For instructions on how to install telesto.&#xD;&#xA;https://github.com/paissaheavyindustries/Dalamud-Repo">
+      <Trigger Enabled="true" Source="FFXIVNetwork" Name="$ReadMeV1.02$" Id="7e50bf41-f8d0-43ff-8394-8cc21aa2e7a2" RegularExpression="https://github.com/KingPendragoon/StackingFlameAM/blob/main/README.md" Description="This utilizes Telesto To mark players and thus needs that.  For instructions on how to install telesto.&#xD;&#xA;https://github.com/paissaheavyindustries/Dalamud-Repo">
         <Actions />
         <Condition Enabled="false" Grouping="Or" />
       </Trigger>
-      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Telesto GetPartyMembers" Id="efc00754-164b-4ad6-8e38-819081fe1312" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6D45">
+      <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="Telesto GetPartyMembers" Id="cd2bb1c8-2c88-4258-9ff1-11a65f1490a8" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6D45">
         <Actions>
           <Action OrderNumber="1" JsonResultVariable="TelestoPartyMembers" JsonEndpointExpression="http://localhost:51323" JsonPayloadExpression="{ &quot;version&quot;: 1, &quot;id&quot;: 123456, &quot;type&quot;: &quot;GetPartyMembers&quot; }" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="GenericJson">
             <Condition Enabled="false" Grouping="Or" />
